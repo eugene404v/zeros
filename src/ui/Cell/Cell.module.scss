@@ -1,0 +1,26 @@
+.cell {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  will-change: transform;
+
+  &:active {
+    animation: blowUp 0.2s ease-in-out;
+  }
+}
+
+@keyframes blowUp {
+  0% {
+    border-color: blue;
+    transform: scale(1);
+  }
+  100% {
+    border-color: blue;
+    transform: scale(1.5);
+  }
+}
